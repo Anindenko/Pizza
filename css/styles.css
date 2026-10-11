@@ -1,0 +1,308 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: Muller;
+    src: url("../assets/fonts/MullerRegular.otf");
+}
+
+@font-face {
+    font-family: MullerBold;
+    src: url("../assets/fonts/MullerBold.otf");
+}
+
+@font-face {
+    font-family: MullerExtraBold;
+    src: url("../assets/fonts/MullerExtraBold.otf");
+}
+
+body {
+    font-family: Muller, sans-serif;
+}
+
+.header {
+    padding: 16px 0 15px 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 13.8px 1.2px rgba(152, 152, 152, 0.2);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    width: 489px;
+    justify-content: space-between;
+}
+
+.menu-item a {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(164, 107, 0);
+    line-height: 1;
+    transition: color 0.2s;
+}
+
+.menu-item a:hover {
+    text-decoration: underline;
+    color: #ffaf18;
+}
+
+.main {
+    margin: 132px 0 81px 0;
+}
+
+.main .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-info {
+    max-width: 622px;
+}
+
+.main-info h1 {
+    font-size: 45px;
+    font-family: MullerExtraBold, sans-serif;
+    color: rgb(185, 145, 80);
+    line-height: 1.222;
+}
+
+.double-title {
+    color: rgb(185, 145, 80);
+}
+
+.double-title span {
+    color: #ffaf18;
+}
+
+.main-advantages {
+    display: flex;
+    margin-top: 13px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-advantage {
+    max-width: 306px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 47px;
+}
+
+.advantage-text {
+    margin-left: 16px;
+}
+
+.advantage-title {
+    font-size: 16px;
+    font-family: MullerExtraBold, sans-serif;
+    color: rgb(255, 175, 24);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.advantage-description {
+    font-size: 16px;
+    color: rgb(185, 145, 80);
+    margin-bottom: 10px;
+}
+
+.main-action {
+    margin-top: 60px;
+}
+
+.btn {
+    width: 224px;
+    height: 60px;
+    background-color: #ffaf18;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 22px;
+    font-size: 16px;
+    font-family: MullerBold, sans-serif;
+    color: rgb(56, 36, 0);
+    text-decoration: none;
+    text-align: center;
+}
+
+.parallax-window {
+    min-height: 600px;
+    background: transparent;
+}
+
+.products {
+    margin: 80px 0 120px 0;
+}
+
+.products-title {
+    font-size: 35px;
+    font-family: MullerBold, sans-serif;
+    color: rgb(189, 152, 92);
+    line-height: 1.571;
+    text-align: center;
+}
+
+.products-items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 35px;
+    justify-content: space-between;
+}
+
+.product {
+    box-shadow: 0px 3px 13.8px 1.2px rgba(152, 152, 152, 0.2);
+    background-color: rgb(255, 255, 255);
+    width: 282px;
+    padding: 15px 20px;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.product a {
+
+}
+
+.product-image {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-title {
+    font-size: 18px;
+    font-family: MullerBold, sans-serif;
+    color: rgb(56, 36, 0);
+}
+
+.product-text {
+    font-size: 14px;
+    color: rgb(24, 26, 26);
+    line-height: 1.286;
+    height: 49px;
+    margin: 14px 0 15px 0;
+}
+
+.product-action .btn {
+    width: 242px;
+    height: 50px;
+    padding: 17px;
+}
+
+.order {
+    padding: 120px 0 115px 0;
+    overflow: hidden;
+}
+
+.order .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.order-text {
+    max-width: 384px;
+}
+
+.order-text-title {
+    font-size: 35px;
+    font-family: MullerExtraBold, sans-serif;
+    margin-bottom: 65px;
+}
+
+.order-text-message {
+    font-size: 16px;
+    color: rgb(185, 145, 80);
+    line-height: 1.5;
+}
+
+.order-form {
+    margin-left: 122px;
+    max-width: 330px;
+}
+
+.order-input {
+    border: 1px solid rgb(185, 145, 80);
+    width: 330px;
+    padding: 23px 22px 24px 22px;
+    font-size: 18px;
+    color: rgb(119, 94, 49);
+    margin-bottom: 24px;
+    height: 60px;
+    outline: none;
+}
+
+.order-input::placeholder {
+    color: rgb(203, 168, 110);
+}
+
+.order .btn {
+    width: 330px;
+    height: 60px;
+}
+
+.order-image {
+    position: relative;
+    width: 282px;
+    margin-left: 78px;
+}
+
+.order-image img {
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+}
+
+.footer {
+    padding: 16px 0 15px 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 13.8px 1.2px rgba(152, 152, 152, 0.2);
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+}
+
+.rights {
+    font-size: 12px;
+    color: rgb(186, 179, 179);
+    margin-left: 358px;
+}
+
+.burger {
+    display: none;
+}
+.close {
+    display: none;
+}
+
+.hvr-sweep-to-right:before {
+    background-color: rgb(189, 152, 92);
+}
+
+.white-popup {
+    position: relative;
+    background: #FFF;
+    padding: 20px;
+    width: auto;
+    max-width: 500px;
+    margin: 20px auto;
+}
